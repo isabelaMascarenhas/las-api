@@ -51,7 +51,17 @@ function calculaDesconto(precoOriginal, categoria, cupomDesconto) {
 // o valor default do comprimento máximo deve ser 5:
 // (teste, 10) -> teste
 // (fulano, 4) -> fula...
-function truncar() { }
+function truncar(palavra, compMaximo) {
+    if (compMaximo == null){
+        compMaximo = 5;
+    }
+    if (palavra.length > compMaximo) {
+        return palavra.substr(0, compMaximo);
+    }
+    else {
+        return palavra;
+    }
+}
 
 // Escreva uma função que valida se o texto informado está preenchido e retorna o texto sem espaços antes ou depois.
 // "" -> undefined
