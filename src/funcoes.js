@@ -67,7 +67,15 @@ function truncar(palavra, compMaximo) {
 // "" -> undefined
 // "   " -> undefined
 // "      Maria " -> "Maria"
-function validaTextoPreenchido() { }
+function validaTextoPreenchido(texto) {
+    if (texto.trim().length == 0) {
+        texto.length = '';
+        return undefined;
+    }
+    else {
+        return texto.trim();
+    }
+}
 
 // =======
 // Desafio
