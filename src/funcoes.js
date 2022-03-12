@@ -13,7 +13,9 @@ function extrairPrimeiroNome(nome) {
 }
 
 // Escreva uma função que receba uma palavra e torna a primeira letra maiúscula e as outras minúsculas: tIaGo -> Tiago
-function capitalizar() { }
+function capitalizar(nome) {
+    return`${nome.charAt(0).toUpperCase()}${nome.substr(1).toLowerCase()}`;
+}
 
 // Escreva uma função que recebe um preço original e uma categoria de produto e calcula o valor do imposto. Produtos da categoria Alimentação são isentos. Outros produtos tem um imposto de 10%.
 // (30, Alimentação) => 0
